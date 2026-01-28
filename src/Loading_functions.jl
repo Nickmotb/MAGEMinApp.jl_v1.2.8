@@ -125,6 +125,7 @@ function get_dtbulk_list()
         Dict("label" => "Mantle (Holland et al., 2013)", "value" => "mtl"),
         Dict("label" => "Stixrude & Lithgow-Bertelloni (2011)", "value" => "sb11"),
         Dict("label" => "Stixrude & Lithgow-Bertelloni (2021)", "value" => "sb21"),
+        Dict("label" => "Stixrude & Lithgow-Bertelloni (2024)", "value" => "sb24"),
         # Dict("label" => "Stixrude & Lithgow-Bertelloni (2024)", "value" => "sb24"),
         Dict("label" => "- CUSTOM DATABASE -", "value" => "separator", "disabled" => true),  # Simulate a horizontal line
         Dict("label" => "Ultramafic extended (Evans & Frost., 2021)", "value" => "ume"),
@@ -167,9 +168,9 @@ function get_dtbulk_list()
                             :acronym     => "sb21",
                             ), cols=:union)
 
-    # push!(dba,Dict(         :database    => "Stixrude & Lithgow-Bertelloni (2024)",
-    #                         :acronym     => "sb24",
-    #                         ), cols=:union)
+    push!(dba,Dict(         :database    => "Stixrude & Lithgow-Bertelloni (2024)",
+                            :acronym     => "sb24",
+                            ), cols=:union)
 
     push!(dba,Dict(         :database    => "Ultramafic extended (Evans & Frost., 2021) + pl, hb and aug from Green et al., 2016",
                             :acronym     => "ume",
@@ -726,7 +727,7 @@ function get_dtbulk_list()
     #MANTLE DATABASE STIXRUDE 2021
     push!(db,Dict(          :bulk       => "predefined",
                             :title      => "KLB-1",
-                            :comments   => "Stixrude & Lithgow-Bertelloni (2011)",
+                            :comments   => "Stixrude & Lithgow-Bertelloni (2021)",
                             :db         => "sb21",
                             :test       => 0,
                             :sysUnit    => "mol",
@@ -737,7 +738,7 @@ function get_dtbulk_list()
 
     push!(db,Dict(          :bulk       => "predefined",
                             :title      => "Pyrolite",
-                            :comments   => "Stixrude & Lithgow-Bertelloni (2011)",
+                            :comments   => "Stixrude & Lithgow-Bertelloni (2021)",
                             :db         => "sb21",
                             :test       => 1,
                             :sysUnit    => "mol",
@@ -748,7 +749,7 @@ function get_dtbulk_list()
 
     push!(db,Dict(          :bulk       => "predefined",
                             :title      => "Harzburgite",
-                            :comments   => "Stixrude & Lithgow-Bertelloni (2011)",
+                            :comments   => "Stixrude & Lithgow-Bertelloni (2021)",
                             :db         => "sb21",
                             :test       => 2,
                             :sysUnit    => "mol",
@@ -783,38 +784,38 @@ function get_dtbulk_list()
                         
                         
     # #MANTLE DATABASE STIXRUDE 2021
-    # push!(db,Dict(          :bulk       => "predefined",
-    #                         :title      => "KLB-1",
-    #                         :comments   => "Stixrude & Lithgow-Bertelloni (2024)",
-    #                         :db         => "sb24",
-    #                         :test       => 0,
-    #                         :sysUnit    => "mol",
-    #                         :oxide      => ["SiO2"; "CaO"; "Al2O3"; "MgO"; "Na2O"; "O"; "Cr2O3"; "Fe"],
-    #                         :frac       => [38.41,3.18,1.8,50.49, 0.250, 7.38, 0.109, 6.96],
-    #                         :frac2      => [38.41,3.18,1.8,50.49, 0.250, 7.38, 0.109, 6.96],
-    #                         ), cols=:union)  
+    push!(db,Dict(          :bulk       => "predefined",
+                            :title      => "KLB-1",
+                            :comments   => "Stixrude & Lithgow-Bertelloni (2024)",
+                            :db         => "sb24",
+                            :test       => 0,
+                            :sysUnit    => "mol",
+                            :oxide      => ["SiO2"; "CaO"; "Al2O3"; "MgO"; "Na2O"; "O"; "Cr2O3"; "Fe"],
+                            :frac       => [38.41,3.18,1.8,50.49, 0.250, 7.38, 0.109, 6.96],
+                            :frac2      => [38.41,3.18,1.8,50.49, 0.250, 7.38, 0.109, 6.96],
+                            ), cols=:union)  
 
-    # push!(db,Dict(          :bulk       => "predefined",
-    #                         :title      => "Pyrolite",
-    #                         :comments   => "Stixrude & Lithgow-Bertelloni (2024)",
-    #                         :db         => "sb24",
-    #                         :test       => 1,
-    #                         :sysUnit    => "mol",
-    #                         :oxide      => ["SiO2"; "CaO"; "Al2O3"; "MgO"; "Na2O"; "O"; "Cr2O3"; "Fe"],
-    #                         :frac       => [38.83, 2.94, 2.03, 50.02, 0.108, 5.99, 0.19, 5.93],
-    #                         :frac2      => [38.83, 2.94, 2.03, 50.02, 0.108, 5.99, 0.19, 5.93],
-    #                         ), cols=:union)  
+    push!(db,Dict(          :bulk       => "predefined",
+                            :title      => "Pyrolite",
+                            :comments   => "Stixrude & Lithgow-Bertelloni (2024)",
+                            :db         => "sb24",
+                            :test       => 1,
+                            :sysUnit    => "mol",
+                            :oxide      => ["SiO2"; "CaO"; "Al2O3"; "MgO"; "Na2O"; "O"; "Cr2O3"; "Fe"],
+                            :frac       => [38.83, 2.94, 2.03, 50.02, 0.108, 5.99, 0.19, 5.93],
+                            :frac2      => [38.83, 2.94, 2.03, 50.02, 0.108, 5.99, 0.19, 5.93],
+                            ), cols=:union)  
 
-    # push!(db,Dict(          :bulk       => "predefined",
-    #                         :title      => "Harzburgite",
-    #                         :comments   => "Stixrude & Lithgow-Bertelloni (2024)",
-    #                         :db         => "sb24",
-    #                         :test       => 2,
-    #                         :sysUnit    => "mol",
-    #                         :oxide      => ["SiO2"; "CaO"; "Al2O3"; "MgO"; "Na2O"; "O"; "Cr2O3"; "Fe"],
-    #                         :frac       => [36.01, 0.80, 0.49, 56.78, 0.008, 6.626, 0.098, 6.3455],
-    #                         :frac2      => [36.01, 0.80, 0.49, 56.78, 0.008, 6.626, 0.098, 6.3455],
-    #                         ), cols=:union)  
+    push!(db,Dict(          :bulk       => "predefined",
+                            :title      => "Harzburgite",
+                            :comments   => "Stixrude & Lithgow-Bertelloni (2024)",
+                            :db         => "sb24",
+                            :test       => 2,
+                            :sysUnit    => "mol",
+                            :oxide      => ["SiO2"; "CaO"; "Al2O3"; "MgO"; "Na2O"; "O"; "Cr2O3"; "Fe"],
+                            :frac       => [36.01, 0.80, 0.49, 56.78, 0.008, 6.626, 0.098, 6.3455],
+                            :frac2      => [36.01, 0.80, 0.49, 56.78, 0.008, 6.626, 0.098, 6.3455],
+                            ), cols=:union)  
 
     # METABASITE DATABASE
     push!(db,Dict(          :bulk       => "predefined",
