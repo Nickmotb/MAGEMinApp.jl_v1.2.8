@@ -785,14 +785,14 @@ function get_dtbulk_list()
                         
     # #MANTLE DATABASE STIXRUDE 2021
     push!(db,Dict(          :bulk       => "predefined",
-                            :title      => "KLB-1",
+                            :title      => "Basalt",
                             :comments   => "Stixrude & Lithgow-Bertelloni (2024)",
                             :db         => "sb24",
                             :test       => 0,
                             :sysUnit    => "mol",
                             :oxide      => ["SiO2"; "CaO"; "Al2O3"; "MgO"; "Na2O"; "O"; "Cr2O3"; "Fe"],
-                            :frac       => [38.41,3.18,1.8,50.49, 0.250, 7.38, 0.109, 6.96],
-                            :frac2      => [38.41,3.18,1.8,50.49, 0.250, 7.38, 0.109, 6.96],
+                            :frac       => [48.295, 12.870, 9.483, 13.951, 2.071, 6.846, 0.027, 6.459],
+                            :frac2      => [48.295, 12.870, 9.483, 13.951, 2.071, 6.846, 0.027, 6.459],
                             ), cols=:union)  
 
     push!(db,Dict(          :bulk       => "predefined",
@@ -802,8 +802,8 @@ function get_dtbulk_list()
                             :test       => 1,
                             :sysUnit    => "mol",
                             :oxide      => ["SiO2"; "CaO"; "Al2O3"; "MgO"; "Na2O"; "O"; "Cr2O3"; "Fe"],
-                            :frac       => [38.83, 2.94, 2.03, 50.02, 0.108, 5.99, 0.19, 5.93],
-                            :frac2      => [38.83, 2.94, 2.03, 50.02, 0.108, 5.99, 0.19, 5.93],
+                            :frac       => [36.621, 2.773, 1.918, 47.168, 0.103, 5.645, 0.183, 5.589],
+                            :frac2      => [36.621, 2.773, 1.918, 47.168, 0.103, 5.645, 0.183, 5.589],
                             ), cols=:union)  
 
     push!(db,Dict(          :bulk       => "predefined",
@@ -813,8 +813,8 @@ function get_dtbulk_list()
                             :test       => 2,
                             :sysUnit    => "mol",
                             :oxide      => ["SiO2"; "CaO"; "Al2O3"; "MgO"; "Na2O"; "O"; "Cr2O3"; "Fe"],
-                            :frac       => [36.01, 0.80, 0.49, 56.78, 0.008, 6.626, 0.098, 6.3455],
-                            :frac2      => [36.01, 0.80, 0.49, 56.78, 0.008, 6.626, 0.098, 6.3455],
+                            :frac       => [34.009, 0.755, 0.461, 53.617, 0.008, 5.542, 0.093, 5.515],
+                            :frac2      => [34.009, 0.755, 0.461, 53.617, 0.008, 5.542, 0.093, 5.515],
                             ), cols=:union)  
 
     # METABASITE DATABASE
